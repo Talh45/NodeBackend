@@ -6,7 +6,7 @@ phases:
       - echo Logging in to DockerHub...
       - echo $DOCKERHUB_PASS | docker login -u $DOCKERHUB_USER --password-stdin
       - REPOSITORY_URI="docker.io/talha45/backend"
-      - CONTAINER_NAME="backend-container"
+      - CONTAINER_NAME="backend"
       - IMAGE_TAG="latest"
   build:
     commands:
